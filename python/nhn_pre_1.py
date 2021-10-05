@@ -29,8 +29,7 @@ for y in range(n):
     for x in range(n):
         if board[y][x] == 1:
             max_size = 0
-            check = dfs(y, x)
-            if check:
+            if dfs(y, x):
                 cnt += 1
                 size.append(max_size)
 
