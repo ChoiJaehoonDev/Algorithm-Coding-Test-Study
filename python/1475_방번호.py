@@ -19,5 +19,4 @@ for n in N:
         else:
             check[n] += 1
 
-print(check)
 print(ceil(max(check.values())))
