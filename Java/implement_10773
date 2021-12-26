@@ -1,0 +1,28 @@
+
+import java.util.*;
+
+public class implement_10773 {
+
+	public static void main(String[] args) {
+		Stack<Integer> s = new Stack<Integer>();
+        Scanner scanner = new Scanner(System.in);
+
+        int n = scanner.nextInt();
+        int answer = 0;
+        for (int i = 0; i< n; i ++){
+            int x = scanner.nextInt();
+            if (x > 0){
+                s.push(x);
+            }else{
+                s.pop();
+            }
+        }
+        scanner.close();
+        
+        while(!s.isEmpty()) {
+        	answer += s.pop();
+        }
+        
+        System.out.println(answer);
+	}
+}
